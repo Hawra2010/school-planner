@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SchoolPlanner</class>
+ <widget class="QMainWindow" name="SchoolPlanner">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>School Planner</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Room</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <row>
+       <property name="text">
+        <string>08:00 - 08:45</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>08:55 - 09:40</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>09:50 - 10:35</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>10:50 - 11:35</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>11:55 - 12:40</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>12:50 - 13:35</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>13:45 - 14:30</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>14:40 - 15:25</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>15:35 - 16:20</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>16:30 - 17:15</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Monday</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tuesday</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Wednesday</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Thursday</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Friday</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignLeading|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignLeading|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignLeading|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignLeading|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignLeading|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textAlignment">
+        <set>AlignLeading|AlignVCenter</set>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>759</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout_QT">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionRooms"/>
+    <addaction name="actionTeachers"/>
+    <addaction name="actionCourses"/>
+    <addaction name="actionClasses"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout_QT"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionRooms">
+   <property name="text">
+    <string>Rooms...</string>
+   </property>
+  </action>
+  <action name="actionTeachers">
+   <property name="text">
+    <string>Teachers...</string>
+   </property>
+  </action>
+  <action name="actionCourses">
+   <property name="text">
+    <string>Courses...</string>
+   </property>
+  </action>
+  <action name="actionClasses">
+   <property name="text">
+    <string>Classes...</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
